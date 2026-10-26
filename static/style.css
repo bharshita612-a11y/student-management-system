@@ -1,0 +1,246 @@
+```css
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f5fb;
+    color: #243047;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #3730a3, #6366f1);
+    color: white;
+    padding: 30px 7%;
+    box-shadow: 0 4px 15px rgba(55, 48, 163, 0.15);
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #e0e7ff;
+}
+
+/* Main container */
+.container {
+    max-width: 1450px;
+    margin: 35px auto;
+    padding: 0 25px;
+}
+
+/* Statistics card */
+.stats-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.stats-card p {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.stats-card h2 {
+    color: #4338ca;
+    font-size: 36px;
+}
+
+.stats-icon {
+    background: #eef2ff;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 28px;
+}
+
+/* Main content layout */
+.content-grid {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    gap: 25px;
+    align-items: start;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    min-width: 0;
+}
+
+.card h2 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* Form */
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0 7px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dbe1ed;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px #e0e7ff;
+}
+
+.btn-primary {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #3730a3;
+    transform: translateY(-1px);
+}
+
+/* Student table */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+thead {
+    background: #eef2ff;
+}
+
+th {
+    color: #4338ca;
+    font-size: 13px;
+    text-align: left;
+    padding: 15px 12px;
+}
+
+td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #edf0f6;
+    font-size: 14px;
+}
+
+tbody tr:hover {
+    background: #f8faff;
+}
+
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-delete:hover {
+    background: #fecaca;
+}
+
+.empty {
+    text-align: center;
+    color: #94a3b8;
+    padding: 35px;
+}
+
+/* Success and error messages */
+.message {
+    padding: 13px 18px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #94a3b8;
+    padding: 35px 0 15px;
+    font-size: 13px;
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 950px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 25px 5%;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .container {
+        padding: 0 15px;
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}
+```
